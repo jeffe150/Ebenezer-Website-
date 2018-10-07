@@ -18,6 +18,10 @@ color:#97272E;
 color:#919191;
 }
 
+#eventstitle{
+color:#97272E;
+}
+
 .centered{
     display: block;
     margin-left: auto;
@@ -26,11 +30,10 @@ color:#919191;
 }
 
 #div1{
-background-color: yellow; column-count: 2;
+  column-count: 2;
 
 }
 #div2{
-background-color: cyan;
 
 }
 
@@ -45,6 +48,7 @@ background-color: cyan;
 
 .right {
     width: 33.33%;
+
 }
 
 .vl{
@@ -57,9 +61,13 @@ background-color: cyan;
 }
 
 .rectangle {
-  height: 100px;
-  width: 850px;
+  display: block;
+  position: absolute;
   background-color: #97272E;
+  height: 175px;
+  width: 850px;
+  position: absolute;
+  top:950px;
 }
 
 .element {
@@ -73,6 +81,7 @@ background-color: cyan;
     margin-right: 40px;
     margin-left: 40px;
 }
+
 
 </style>
 
@@ -130,10 +139,12 @@ Learning and growing helps everyone at every stage of life, and for seniors, the
 
 <div class="vl"></div>
 
-<div id="div2"class="column right" class="margins">
+<div id="div2" class="column right">
 
-<h3> Recent Events </h3>
-  <img src="4_1_orig.jpg" class="centered" alt="woman being pushed in wheelchair points at pond">
+<div class="margins">
+
+<h3 id="eventstitle"> Recent Events </h3>
+  <img src="4_1_orig.jpg" class="centered" alt="woman being pushed in wheelchair points at pond" style="width:80%">
 <p>Last month our program participants took an outing to the Minnesota Landscape Arboretum! It was a beautiful day to take a look at the huge variety of plants this garden has to offer. Each senior got to enjoy some fresh air and beautiful scenery. Special thanks to our volunteers who assisted any residents with chairs and other mobility issues. </p>
 
 
@@ -148,17 +159,15 @@ Learning and growing helps everyone at every stage of life, and for seniors, the
 </p>
 </div>
 
-<div class="rectangle"></div>
+</div>
 
-<div>
-<h4>Make a Gift</h4>
-<p> Ebenezer's Horticultural Therapy Program and Spiritual Care and Healing Garden has been honored as "Innovation of the Year" by Aging Services of Minnesota, Minnesota's largest statewide trade association for providers of older adult services. The award honors providers that have demonstrated creativity in programs and/or services to their customers.</p>
+<div class="rectangle">
+  <h4>Make a Gift</h4>
+  <p> Ebenezer's Horticultural Therapy Program and Spiritual Care and Healing Garden has been honored as "Innovation of the Year" by Aging Services of Minnesota, Minnesota's largest statewide trade association for providers of older adult services. The award honors providers that have demonstrated creativity in programs and/or services to their customers.</p>
+
 </div>
 
 </div>
-
-<div class="rectangle"></div>
-
 
 
 </body>
