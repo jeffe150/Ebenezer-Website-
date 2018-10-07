@@ -34,24 +34,20 @@ background-color: cyan;
 
 }
 
-#div3{
-  background-color: #bbb
-}
-
-
 .column {
     float: left;
 }
 
 .left {
     width: 66.66%;
+
 }
 
 .right {
     width: 33.33%;
 }
 
-.vl {
+.vl{
     border-left: 3px solid #919191;
     height: 500px;
     position: absolute;
@@ -62,8 +58,20 @@ background-color: cyan;
 
 .rectangle {
   height: 100px;
-  width: 700px;
+  width: 850px;
   background-color: #97272E;
+}
+
+.element {
+	-webkit-column-break-before: always;
+	break-before: column;
+}
+
+.margins{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 </style>
@@ -84,10 +92,10 @@ background-color: cyan;
 
 <div id="div1" class="column left">
 
-<div id="div4">
-
     <img src="ebenezer garden box.jpg" class="centered" alt="raised garden bed full of plants" style="width:60%">
 
+
+<div class="margins">
 <h3> Activities:</h3>
   <ul>
       <li>Creating seasonal fresh-cut floral arrangements</li>
@@ -101,27 +109,28 @@ background-color: cyan;
   </ul>
 </div>
 
-<div id=div5>
+<div id=div5 class="element">
   <img src="Toronto.png" class="centered" alt="man in wheelchair reaches for flower" style="width:75%">
 
-<h3>Life Long Learning:</h3>
+<div class="margins">
+<h3> Life Long Learning:</h3>
 <p>Ebenezer's Life Long Learning Initiative is a collection of coordinated arts and education programs designed to foster growth and creativity for seniors. Life-long learning is the process of keeping your mind, body and spirit engaged -at any age - by actively pursuing knowledge and experience.
-Learning and growing helps everyone at every stage of life, and for seniors, the benefits are endless. Research has shown that with opportunities for self expression and discovery, seniors experience vibrant living, artistic growth as well as improved mental and physical health. Life Long Learning helps our residents stay connected to their world - both locally and beyond. </p>
+Learning and growing helps everyone at every stage of life, and for seniors, the benefits are endless.
+</p>
+
+<p>Research has shown that with opportunities for self expression and discovery, seniors experience vibrant living, artistic growth as well as improved mental and physical health. Life Long Learning helps our residents stay connected to their world - both locally and beyond.
+
+</p>
 
 </div>
 
-<div class="rectangle"></div>
-
-<div id="div3">
-<h4>Make a Gift</h4>
-<p> Ebenezer's Horticultural Therapy Program and Spiritual Care and Healing Garden has been honored as "Innovation of the Year" by Aging Services of Minnesota, Minnesota's largest statewide trade association for providers of older adult services. The award honors providers that have demonstrated creativity in programs and/or services to their customers.</p>
 </div>
 
 </div>
 
 <div class="vl"></div>
 
-<div id="div2"class="column right">
+<div id="div2"class="column right" class="margins">
 
 <h3> Recent Events </h3>
   <img src="4_1_orig.jpg" class="centered" alt="woman being pushed in wheelchair points at pond">
@@ -139,7 +148,16 @@ Learning and growing helps everyone at every stage of life, and for seniors, the
 </p>
 </div>
 
+<div class="rectangle"></div>
+
+<div>
+<h4>Make a Gift</h4>
+<p> Ebenezer's Horticultural Therapy Program and Spiritual Care and Healing Garden has been honored as "Innovation of the Year" by Aging Services of Minnesota, Minnesota's largest statewide trade association for providers of older adult services. The award honors providers that have demonstrated creativity in programs and/or services to their customers.</p>
 </div>
+
+</div>
+
+<div class="rectangle"></div>
 
 
 
