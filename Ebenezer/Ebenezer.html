@@ -149,6 +149,46 @@ font-variant: small-caps;
   text-transform: uppercase;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 </style>
 
 <!-- https://jeffe150.github.io/Ebenezer_Website_/Ebenezer/Ebenezer.html -->
@@ -211,7 +251,11 @@ font-variant: small-caps;
 
 <div class="margins">
 
- <div class="button"> <a style="color:#FFFFFF"> Sign up for Our Newsletter</a></div>
+ <h3> Sign Up for Our Newsletter </h3>
+
+ <div class="tooltip"> Sign up for Our Newsletter!
+  <span class="tooltiptext"> TEXT </span>
+</div>
 
 <h3 id="eventstitle"> Recent Events </h3>
   <img src="4_1_orig.jpg" class="centered" alt="woman being pushed in wheelchair points at pond" style="width:80%">
