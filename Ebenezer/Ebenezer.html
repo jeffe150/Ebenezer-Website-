@@ -58,6 +58,11 @@ font-variant: small-caps;
   column-count: 2;
 }
 
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .centered{
     display: block;
     margin-left: auto;
@@ -121,7 +126,7 @@ font-variant: small-caps;
   color: #FFFFFF;
   background: #A49B9B ;
   border: 2px solid #0099CC;
-  border-radius: 6px;
+  border-radius: 10px;
   border: none;
   padding: 16px 32px;
   text-align: center;
@@ -135,23 +140,6 @@ font-variant: small-caps;
   text-transform: uppercase;
 }
 
-.button2{
-  color: #FFFFFF;
-  background: #A49B9B ;
-  border: 2px solid #0099CC;
-  border-radius: 6px;
-  border: none;
-  padding: 16px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 60px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-}
 
 .tooltip {
     position: relative;
@@ -197,8 +185,7 @@ font-variant: small-caps;
  background-color:#97272E;
  -moz-border-radius:28px;
  -webkit-border-radius:28px;
- border-radius:28px;
- border:1px solid #4e6096;
+ border-radius: 10px;
  display:inline-block;
  cursor:pointer;
  color:#ffffff;
@@ -206,6 +193,7 @@ font-variant: small-caps;
  font-size:16px;
  padding:13px 16px;
  text-decoration:none;
+ width: 250px
 }
 .myButton:hover {
  background-color:#A49B9B;
@@ -279,7 +267,7 @@ font-variant: small-caps;
 
 <div class="margins">
 
-  <button onclick="myFunction()">Sign Up for Our Newsletter</button>
+  <a id="wrapper" href="#" class="myButton" onclick="myFunction()">Sign Up for Our Newsletter!</a>
 
   <script>
   function myFunction() {
