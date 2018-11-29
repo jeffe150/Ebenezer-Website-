@@ -10,6 +10,13 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+   <title>My Page</title>
+    <script language="javascript">
+        function emailCurrentPage(){
+            window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
+        }
+    </script>
+
 </head>
 
 <style>
@@ -98,7 +105,7 @@ font-variant: small-caps;
 
 .vl{
     border-left: 3px solid #919191;
-    height: 970px;
+    height: 1000px;
     position: absolute;
     left: 66.6%;
     margin-left: -3px;
@@ -109,9 +116,9 @@ font-variant: small-caps;
   display: block;
   position: absolute;
   background-color: #97272E;
-  height: 350px;
+  height: 300px;
   width: 100%;
-  top: 1350px;
+  top: 1400px;
 }
 
 .element {
@@ -213,17 +220,23 @@ font-variant: small-caps;
  -webkit-border-radius:28px;
  border-radius: 10px;
  display:inline-block;
+ text-align: center;
  cursor:pointer;
  color:#ffffff;
  font-family:Verdana;
  font-size:16px;
  padding:13px 16px;
+ -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
  text-decoration:none;
- width: 250px
+ width: 250px;
+ text-transform: uppercase;
+
 }
 
 .myButton:hover {
  background-color:#A49B9B;
+ color:#ffffff;
 }
 
 .myButton:active {
@@ -231,18 +244,7 @@ font-variant: small-caps;
  top:1px;
 }
 
-.btn-default {
-    top: 25%;
-    left:25%;
-    color: #999;
-    background: #fffccc;
-}
-
 .myFunctionNewsletter{
-
-}
-
-.ContactButton{
 
 }
 
@@ -261,6 +263,29 @@ font-variant: small-caps;
 .carousel-control.right .glyphicon {
     right: 0;
     margin-right: 0;
+}
+
+
+.emailCurrentPagebutton{
+  color: #FFFFFF;
+  background: #97272E ;
+  border: 2px solid #0099CC;
+  border-radius: 10px;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 13px 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.emailCurrentPagebutton:hover {
+ background-color:#A49B9B;
 }
 
 </style>
@@ -341,6 +366,9 @@ font-variant: small-caps;
       <li>Learning how to attract birds and butterflies to our gardens</li>
       <li>Going on garden and nature-related outings to sites in the metro area and beyond</li>
   </ul>
+  <div class="emailCurrentPagebutton" clas>
+  <a href="javascript:emailCurrentPage()"style="color:#FFFFFF">Mail this page</a>
+</div>
 </div>
 
 <div class="element">
@@ -368,8 +396,7 @@ font-variant: small-caps;
 <div class="column right">
 
 <div class="margins">
-
-  <a id="wrapper" href="#" class="myButton" onclick="myFunctionNewsletter()">Sign Up for Our Newsletter!</a>
+  <a id="wrapper" href="#" class="myButton" onclick="myFunctionNewsletter()">Sign Up for Our Newsletter</a>
 
   <script>
   function myFunctionNewsletter() {
