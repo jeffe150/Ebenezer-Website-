@@ -23,6 +23,7 @@
 
 body{
 font-family: "lucida console", osaka, sans-serif;
+padding:0px;margin:0px;border-width:0px;
 }
 
 
@@ -71,6 +72,7 @@ font-variant: small-caps;
 
 #div1{
   column-count: 2;
+  height: 75%;
 }
 
 #wrapper {
@@ -82,10 +84,17 @@ font-variant: small-caps;
 
 }
 
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+}
+
 .centered{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+    margin-right: 0px
     width: 50%;
 }
 
@@ -100,6 +109,10 @@ font-variant: small-caps;
 
 .right {
     width: 33.33%;
+
+}
+
+.columnleft{
 
 }
 
@@ -119,11 +132,7 @@ font-variant: small-caps;
   height: 300px;
   width: 100%;
   top: 1400px;
-}
-
-.element {
-	-webkit-column-break-before: always;
-	break-before: column;
+  margin-bottom: 0px;
 }
 
 .margins{
@@ -351,9 +360,7 @@ font-variant: small-caps;
 <!-- END CAROUSEL -->
 
 <div class="row">
-
 <div id="div1" class="column left">
-
 <div class="marginsActivities">
 <h3 id="acttitle"> Activities:</h3>
   <ul>
@@ -430,7 +437,7 @@ font-variant: small-caps;
 
 </div>
 
-<div class="rectangle" class="item" data-aos="zoom-out">
+<div class="rectangle" class="item">
 
   <h3 id="grey" class="marginsv2">Ebenezer's Horticultural Therapy Program is supported solely by donations.</h3>
 
