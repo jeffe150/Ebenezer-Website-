@@ -253,10 +253,6 @@ font-variant: small-caps;
  top:1px;
 }
 
-.myFunctionNewsletter{
-
-}
-
 .carousel-inner>.active { width: 100%}
 
 .carousel {
@@ -296,38 +292,6 @@ font-variant: small-caps;
 .emailCurrentPagebutton:hover {
  background-color:#A49B9B;
 }
-
-#formwrapper{
-  position:fixed;
-    width: 800px;
-    margin-top:20px;
-    left: 50%;
-    top: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index:3;
-    background-color: yellow;
-}
-
-#translucentbg{
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,.5);
-  z-index: 2;
-  left: 0px;
-  top: 0px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
 
 </style>
 
@@ -434,14 +398,9 @@ font-variant: small-caps;
 
 <div class="column right">
 
-<div class="margins">
-  <a id="wrapper" href="#" class="myButton" onclick"myFunctionNewsletter()"=>Sign Up for Our Newsletter</a>
+  <div class="margins">
 
-  <script>
-  function myFunctionNewsletter() {
-      alert("Ebenezer's Horticultural Therapy Program creates a quarterly newsletter that details recent and upcoming events. Our newsletter provides you with details about our program and activities to do with your loved ones. Fill out the form below to sign up to have our newsletter emailed or mailed to you once every season.");
-  }
-  </script>
+  <div id="wrapper" href="#" class="myButton"> <a href="https://jeffe150.wufoo.com/forms/zbfvrq20bwqnvd/" style="color:#FFFFFF">Sign Up for Our Newsletter</a></div>
 
 <h3 id="eventstitle"> Recent Events </h3>
   <img src="4_1_orig.jpg" class="centered" alt="woman being pushed in wheelchair points at pond" style="width:80%">
@@ -485,37 +444,4 @@ font-variant: small-caps;
 
 </div>
 
-
-<!--TESTING -->
-
-
-<div id="formwrapper">
-  <div id="wufoo-zbfvrq20bwqnvd">
-  Fill out my <a href="https://jeffe150.wufoo.com/forms/zbfvrq20bwqnvd">online form</a>.
-  </div>
-  <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>
-  <script type="text/javascript">var zbfvrq20bwqnvd;(function(d, t) {
-  var s = d.createElement(t), options = {
-  'userName':'jeffe150',
-  'formHash':'zbfvrq20bwqnvd',
-  'autoResize':true,
-  'height':'673',
-  'async':true,
-  'host':'wufoo.com',
-  'header':'show',
-  'ssl':true};
-  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-  s.onload = s.onreadystatechange = function() {
-  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-  try { zbfvrq20bwqnvd = new WufooForm();zbfvrq20bwqnvd.initialize(options);zbfvrq20bwqnvd.display(); } catch (e) {}};
-  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-  })(document, 'script');</script>
-
-<!-- other cloe button-->
-<input type="button" value="Close this window" onclick="self.close()">
-
-</div> <!-- wrapper end-->
-
-<div id="translucentbg"></div>
-
-<!--TTESTING END-->
+</body>
